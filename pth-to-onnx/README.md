@@ -6,8 +6,6 @@ https://github.com/pytorch/examples/tree/master/fast_neural_style
 
 原代码被修改过，为了产生input, output都是image的mlmodel。
 
-
-
 B站教程里无法生成图片的issue已经修复。
 
 <https://www.bilibili.com/video/av52804993>
@@ -35,12 +33,11 @@ $MODEL_PATH : 训练好的模型的路径
 
 # Licence
 
-发布在https://github.com/pytorch/examples/tree/master/fast_neural_style上的代码的licence：
+发布在<https://github.com/pytorch/examples/tree/master/fast_neural_style>上的代码的licence：
 
 BSD 3-Clause License
 
 Copyright (c) 2017, All rights reserved. 
-
 
 
 
