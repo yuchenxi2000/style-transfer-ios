@@ -65,7 +65,7 @@ output : 1008 * 756 image with 3 channels (RGB)
 
 # Licence
 
-发布在https://github.com/pytorch/examples/tree/master/fast_neural_style上的代码的licence：
+发布在<https://github.com/pytorch/examples/tree/master/fast_neural_style>上的代码的licence：
 
 BSD 3-Clause License
 
