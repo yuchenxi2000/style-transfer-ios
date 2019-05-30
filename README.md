@@ -61,7 +61,9 @@ output : 1008 * 756 image with 3 channels (RGB)
 
 ## 4. 构建UI，把model集成到app里
 
+下载style/下的全部内容。把models/下的模型拖到style/style/models/下面（或者加入自己的模型）。
 
+Xcode里编译运行不解释。
 
 # Licence
 
