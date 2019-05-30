@@ -1,14 +1,16 @@
-# Description
+# Notice
 
-已经转好格式的model
+请把风格迁移模型放到该文件夹下。
 
-不想做直接下载吧
+* 如果你使用该仓库下的模型（在models/下），直接把它们拖到该文件夹下。
 
-感觉自己萌萌哒 : )
+* 如果使用自己的模型。可能需要改代码。需要修改ViewController.swift下的loadModel函数才能正常编译。
 
-# Input & output size
+原型
 
-input : 1008 * 756 image with 3 channels (RGB)
+``` swift
+func loadModel(_ style : Int) -> MLModel
+```
 
-output : 1008 * 756 image with 3 channels (RGB)
+当然，还需修改一些细节（label上的文字，etc）自己看吧。
 
