@@ -2,25 +2,19 @@
 
 style transfer ios app，构建自己的风格迁移app。
 
-pth转onnx、onnx转mlmodel的代码以及已经转换好的model已经发布，
+# 如何在 iOS 上使用 pytorch 模型
 
-iOS app的源码在2019.6.10以后发布在这个repository。
+## 1. 训练 model & pth 转 onnx
 
-视频教程：https://www.bilibili.com/video/av52804993
-
-## 1. 训练model & pth转onnx
-
-使用pytorch官方给出的fast neural style 例子
+使用 pytorch 官方给出的 fast neural style 例子
 
 https://github.com/pytorch/examples/tree/master/fast_neural_style
 
-原代码被修改过，为了产生input, output都是image的mlmodel。
-
-B站教程里无法生成图片的issue已经修复。
+原代码被修改过，为了产生 input, output 都是 image 的 mlmodel。
 
 ### usage
 
-如何运行生成.onnx合适的model：
+如何运行生成 .onnx 格式的 model：
 
 ```shell
 example$ python3 neural_style.py eval  --content-image $CONTENT_IMAGE --output-image $OUTPUT_IMAGE --model $MODEL_PATH --cuda 0
@@ -35,9 +29,9 @@ $OUTPUT_IMAGE : 输出图片的路径
 
 $MODEL_PATH : 训练好的模型的路径
 
-## 2. onnx 转mlmodel
+## 2. onnx 转 mlmodel
 
-onnx格式转mlmodel。
+onnx 格式转 mlmodel。
 
 ```shell
 example$ python3 onnx-to-mlmodel.py
@@ -47,35 +41,19 @@ example$ python3 onnx-to-mlmodel.py
 
 ## 3. 最终结果
 
-/models : 已经转好格式的model
+/models : 已经转好格式的 model
 
-不想做直接下载吧
+> input & output size
 
-感觉自己萌萌哒 : )
+> input : 1008 * 756 image with 3 channels (RGB)
 
-### input & output size
-
-input : 1008 * 756 image with 3 channels (RGB)
-
-output : 1008 * 756 image with 3 channels (RGB)
+> output : 1008 * 756 image with 3 channels (RGB)
 
 ## 4. 构建UI，把model集成到app里
 
-下载style/下的全部内容。把models/下的模型拖到style/style/models/下面（或者加入自己的模型）。
-
-Xcode里编译运行不解释。
+style 是一个示例 App，自带了一些模型。
 
 # Licence
-
-发布在<https://github.com/pytorch/examples/tree/master/fast_neural_style>上的代码的licence：
-
-BSD 3-Clause License
-
-Copyright (c) 2017, All rights reserved. 
-
-
-
-该代码的license：
 
 MIT License
 
