@@ -1,4 +1,4 @@
-# Notice
+# Model Folder
 
 请把风格迁移模型放到该文件夹下。这里是我自己的模型。
 
@@ -11,4 +11,12 @@ func loadModel(_ style : Int) -> MLModel
 ```
 
 （当然，还需修改一些细节，label上的文字，etc）
+
+# Input & output
+
+模型的输入，输出：
+
+input : 1008 * 756 image with 3 channels (RGB)
+
+output : 1008 * 756 image with 3 channels (RGB)
 
