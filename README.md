@@ -17,8 +17,7 @@ https://github.com/pytorch/examples/tree/master/fast_neural_style
 如何运行生成 .onnx 格式的 model：
 
 ```shell
-example$ python3 neural_style.py eval  --content-image $CONTENT_IMAGE --output-image $OUTPUT_IMAGE --model $MODEL_PATH --cuda 0
-
+python3 neural_style.py eval --content-image $CONTENT_IMAGE --output-image $OUTPUT_IMAGE --model $MODEL_PATH --cuda 0
 ```
 
 为了得到onnx模型必须输入一张图片，什么类型都可以。最终模型的输入图片尺寸就是原先输入图片的尺寸。
@@ -41,7 +40,7 @@ example$ python3 onnx-to-mlmodel.py
 
 ## 3. 最终结果
 
-/models : 已经转好格式的 model
+/style/style/models : 已经转好格式的 model
 
 > input & output size
 
